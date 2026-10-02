@@ -277,7 +277,7 @@ const KEY = 'dv-resume-v2', OLD_KEY = 'dv-resume-v1';
 const THEMES = {
   orange: { name: 'Orange',          ra: '#d94f00', ra2: '#f58220', soft: '#ffe3c8', line: '#f1d3b8', org: '#a8431a', chip: '#7a3a10', text: '#2b1a10', muted: '#7a5a45', ring: '#f26b1d' },
   blue:   { name: 'Blue',            ra: '#1d4ed8', ra2: '#4f8ff7', soft: '#dbeafe', line: '#c3d7f7', org: '#1e40af', chip: '#1e3a8a', text: '#0f172a', muted: '#475569', ring: '#2563eb' },
-  green:  { name: 'Green (light)',   ra: '#2f8f4e', ra2: '#7ccf97', soft: '#def5e5', line: '#c6e9d2', org: '#1f6b3a', chip: '#1b5e34', text: '#14261b', muted: '#4b6355', ring: '#4caf70' },
+  green:  { name: 'Green',   ra: '#2f8f4e', ra2: '#7ccf97', soft: '#def5e5', line: '#c6e9d2', org: '#1f6b3a', chip: '#1b5e34', text: '#14261b', muted: '#4b6355', ring: '#4caf70' },
   purple: { name: 'Purple',          ra: '#6d28d9', ra2: '#a78bfa', soft: '#ede9fe', line: '#d9d0fa', org: '#5b21b6', chip: '#4c1d95', text: '#1e1033', muted: '#5b4d78', ring: '#8b5cf6' },
   maroon: { name: 'Maroon',          ra: '#9f1239', ra2: '#e11d48', soft: '#ffe4e9', line: '#f7c6d0', org: '#9f1239', chip: '#881337', text: '#2a0f16', muted: '#6b4650', ring: '#be123c' },
   mono:   { name: 'Black & white',   ra: '#111111', ra2: '#555555', soft: '#eeeeee', line: '#cfcfcf', org: '#333333', chip: '#111111', text: '#111111', muted: '#555555', ring: '#111111' }
@@ -325,7 +325,7 @@ function defaultSections() {
           mk('chips', 'Skills'), mk('list', 'Certifications & Achievements'), mk('chips', 'Languages')];
 }
 function emptyState() {
-  const s = { photo: null, theme: 'orange', sections: defaultSections() };
+  const s = { photo: null, theme: 'mono', sections: defaultSections() };
   STATIC_KEYS.forEach(k => s[k] = '');
   return s;
 }
